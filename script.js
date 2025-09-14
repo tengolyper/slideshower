@@ -1,7 +1,7 @@
 const images = [
-  "images/photo1.jpg",
-  "images/photo2.jpg",
-  "images/photo3.jpg"
+  "images/image1.png",
+  "images/image2.png",
+  "images/image3.png"
 ];
 
 let currentIndex = 0;
