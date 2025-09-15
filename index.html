@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>slideshower</title>
+  <title>Custom Image Slideshow</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <input type="file" id="imageUpload" accept="image/*" multiple />
   <div class="arrow left" onclick="prevSlide()">&#10094;</div>
 
   <div class="slideshow-container">
-    <img id="slide" src="images/image1.png" alt="Slideshow Image" />
+    <img id="slide" alt="Slideshow Image" />
+    <div id="pageIndicator">Page 0 of 0</div>
   </div>
 
   <div class="arrow right" onclick="nextSlide()">&#10095;</div>
