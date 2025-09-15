@@ -20,3 +20,12 @@ function prevSlide() {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   showSlide(currentIndex);
 }
+
+// ⌨️ Keyboard arrow support
+document.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowRight") {
+    nextSlide();
+  } else if (event.key === "ArrowLeft") {
+    prevSlide();
+  }
+});
