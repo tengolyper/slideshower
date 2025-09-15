@@ -77,3 +77,34 @@ img {
   background: rgba(0, 0, 0, 0.5);
   padding: 5px 10px;
   border
+/* Swipe animation classes */
+.slide-left {
+  animation: swipeLeft 0.2s ease-in-out;
+}
+
+.slide-right {
+  animation: swipeRight 0.2s ease-in-out;
+}
+
+@keyframes swipeLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100px);
+    opacity: 0.5;
+  }
+}
+
+@keyframes swipeRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100px);
+    opacity: 0.5;
+  }
+}
+
