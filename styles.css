@@ -1,3 +1,4 @@
+/* General page styling */
 body {
   margin: 0;
   background-color: #111;
@@ -8,13 +9,17 @@ body {
   font-family: sans-serif;
   overflow: hidden;
   color: white;
+  position: relative;
 }
 
+/* File upload input */
 #imageUpload {
   margin: 20px;
   color: white;
+  z-index: 2;
 }
 
+/* Slideshow container */
 .slideshow-container {
   position: relative;
   width: 100%;
@@ -24,44 +29,51 @@ body {
   align-items: center;
 }
 
+/* Image styling */
 img {
   max-width: 70%;
   max-height: 70vh;
   object-fit: contain;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+/* Navigation arrows */
 .arrow {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 4rem;
+  font-size: 6rem;
   color: white;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px 20px;
   cursor: pointer;
   z-index: 1000;
   user-select: none;
 }
 
+/* Hover effect for arrows */
 .arrow:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-.left {
+/* Left arrow positioning */
+.arrow.left {
   left: 0;
+  border-radius: 0 10px 10px 0;
 }
 
-.right {
+/* Right arrow positioning */
+.arrow.right {
   right: 0;
+  border-radius: 10px 0 0 10px;
 }
 
+/* Page indicator styling */
 #pageIndicator {
   position: absolute;
   bottom: 10px;
   font-size: 1.2rem;
   background: rgba(0, 0, 0, 0.5);
   padding: 5px 10px;
-  border-radius: 5px;
-}
+  border
