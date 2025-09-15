@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Photo Slideshow</title>
+  <title>Anchored Arrow Slideshow</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="arrow left" onclick="prevSlide()">&#10094;</div>
+
   <div class="slideshow-container">
-    <button class="arrow left" onclick="prevSlide()">&#10094;</button>
-    <img id="slide" src="images/photo1.jpg" alt="Slideshow Image" />
-    <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+    <img id="slide" src="images/image1.png" alt="Slideshow Image" />
   </div>
+
+  <div class="arrow right" onclick="nextSlide()">&#10095;</div>
 
   <script src="script.js"></script>
 </body>
