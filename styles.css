@@ -7,12 +7,14 @@ body {
   justify-content: center;
   position: relative;
   font-family: sans-serif;
+  overflow: hidden;
 }
 
 .slideshow-container {
   max-width: 80%;
   max-height: 80vh;
   overflow: hidden;
+  z-index: 1;
 }
 
 img {
